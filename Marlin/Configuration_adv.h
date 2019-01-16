@@ -90,7 +90,7 @@
    * and/or decrease WATCH_TEMP_INCREASE. WATCH_TEMP_INCREASE should not be set
    * below 2.
    */
-  #define WATCH_TEMP_PERIOD 20                // Seconds
+  #define WATCH_TEMP_PERIOD 30                // Seconds
   #define WATCH_TEMP_INCREASE 2               // Degrees Celsius
 #endif
 
@@ -463,7 +463,8 @@
 //#define ADAPTIVE_STEP_SMOOTHING
 
 // Microstep setting (Only functional when stepper driver microstep pins are connected to MCU.
-#define MICROSTEP_MODES { 16, 16, 16, 16, 16 } // [1,2,4,8,16]
+// Trinus: 4 fakes 16, 16 fakes 32, modes for Trinus: https://github.com/sambuls/MarlinOnTrinus/issues/1
+#define MICROSTEP_MODES { 4, 4, 4, 16, 4 } // [1,2,4,8,16]
 
 /**
  *  @section  stepper motor current

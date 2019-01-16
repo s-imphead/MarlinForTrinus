@@ -1,7 +1,9 @@
 # Marlin 3D Printer Firmware
 
-[![Build Status](https://travis-ci.org/MarlinFirmware/Marlin.svg?branch=RCBugFix)](https://travis-ci.org/MarlinFirmware/Marlin)
-[![Coverity Scan Build Status](https://scan.coverity.com/projects/2224/badge.svg)](https://scan.coverity.com/projects/2224)
+## CUSTOMIZED FOR TRINUS
+Modifications based on [Sam Buls: MarlinOnTrinus, comments by Firesped and ingmaniac1`](https://github.com/sambuls/MarlinOnTrinus/issues)
+NOTE: HEATER_0_MAXTEMP must be changed to 250 for Trinus hotend; also, do not know whether thermistor setting is correct! PID for hotend not optimal. Also, SD card not enabled.
+
 
 <img align="top" width=175 src="buildroot/share/pixmaps/logo/marlin-250.png" />
 

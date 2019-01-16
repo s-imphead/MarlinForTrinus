@@ -21,6 +21,10 @@
  */
 
 /**
+ * This file was modified to include the Trinus 3D printer pins fils
+ */
+
+/**
  * Include pins definitions
  *
  * Pins numbering schemes:
@@ -83,7 +87,8 @@
   #include "pins_RAMPS_PLUS.h"        // ATmega1280, ATmega2560                     env:megaatmega1280 env:megaatmega2560
 #elif MB(RAMPS_PLUS_SF)
   #include "pins_RAMPS_PLUS.h"        // ATmega1280, ATmega2560                     env:megaatmega1280 env:megaatmega2560
-
+#elif MB(TRINUS)
+  #include "pins_TRINUS.h"
 //
 // RAMPS Derivatives - ATmega1280, ATmega2560
 //
